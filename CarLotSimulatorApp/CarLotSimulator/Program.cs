@@ -18,6 +18,7 @@ namespace CarLotSimulator
             //Now that the Car class is created we can instanciate 3 new cars -- DONE
             //Set the properties for each of the cars -- DONE
             //Call each of the methods for each car -- DONE
+            
 
             var lot = new CarLot();
 
@@ -33,6 +34,8 @@ namespace CarLotSimulator
             carOne.MakeHonkNoise(carOne.HonkNoise);
 
             lot.Cars.Add(carOne);
+
+            Console.WriteLine(CarLot.numberOfCars);
 
 
             var carTwo = new Car()
@@ -51,6 +54,7 @@ namespace CarLotSimulator
 
             lot.Cars.Add(carTwo);
 
+            Console.WriteLine(CarLot.numberOfCars);
 
             var carThree = new Car(2023, "Tesla", "Model 3", "humm", "Beep", true);
 
@@ -58,7 +62,8 @@ namespace CarLotSimulator
             carThree.MakeHonkNoise(carThree.HonkNoise);
 
             lot.Cars.Add(carThree);
-
+            
+            Console.WriteLine(CarLot.numberOfCars);
 
             //*************BONUS*************//
 
